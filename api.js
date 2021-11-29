@@ -12,7 +12,7 @@ function api(){
                 output+="<td>"+JSON.stringify(response[i].completed)+"</td>";
                 output+="<td>"+`    <p>
                 <label>
-                  <input type="checkbox" onclick="countCheckBox()" />
+                  <input type="checkbox" onclick="count()" />
                   <span>Checked</span>
                 </label>
               </p>`+"</td>";
@@ -26,7 +26,7 @@ function api(){
     xhttp.open("GET","https://jsonplaceholder.typicode.com/todos",true);
     xhttp.send();
 }
-function countCheckBox() {
+function count() {
 
     var checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
   
